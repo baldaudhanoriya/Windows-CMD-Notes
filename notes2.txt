@@ -1,0 +1,11 @@
+CMD is the command line interface for Windows operating systems.
+A command line interface is a way of interacting with a computer directly using text commands.
+the word "shell," which is used to describe a program that allows the user to give commands to the computer. So a command line interface, as well as a GUI, are both shells.
+The Command Prompt can also run batch files, which are a great way to automate tasks.
+To run the Command Prompt as an admin, hold Ctrl + Shift when you launch cmd
+
+Typing help will list many common commands that you can use
+command followed by /?. will give more help, plus additional options for modifying how it works.
+    dir/?
+
+

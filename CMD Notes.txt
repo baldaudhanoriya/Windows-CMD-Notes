@@ -1,0 +1,9 @@
+echo >> to print something
+pause >> to stop pricessing
+echo some-text  > filename.txt			create  a file
+
+d: to switch form C drive to D drive
+
+
+trace all the router an request is went through: tracert <ip>
+get domain of any server by ip: nslookup <ip>
