@@ -5,7 +5,33 @@ The Command Prompt can also run batch files, which are a great way to automate t
 To run the Command Prompt as an admin, hold Ctrl + Shift when you launch cmd
 
 Typing help will list many common commands that you can use
-command followed by /?. will give more help, plus additional options for modifying how it works.
-    dir/?
 
+change disk:
+    type disk name followed by colon ':'
+        d:, D:, e:, E:
 
+The dir command, which is short for directory, will list the contents of the folder that you're currently in
+    dir
+To change your current location, use cd (short for change directory) followed by the folder you want to visit. Available folders are marked with <DIR> when you run the dir command.
+
+Creating and Deleting Files and Folders:
+    mkdir [new folder name]         // make directory
+    rmdir [folder name]             // remove directory,     will delete a folder, but only if it's empty
+    del [file name]                 // To delete a file, use 
+
+CMD Management
+    cls
+        type cls to clear the contents and start fresh
+    Ctrl + C
+        if there's a command running that you want to cancel (maybe it's taking too long), hit Ctrl + C to end it.
+
+Help:
+    command followed by /?. will give more help, plus additional options for modifying how it works.
+        dir/?
+
+Networking Commands and More
+    ping 
+        let you see if your computer can reach a remote destination and how long it takes.
+    ipconfig
+        lets you see the network overview for your current connection.
+        
