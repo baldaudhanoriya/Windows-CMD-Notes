@@ -24,6 +24,9 @@ CMD Management
         type cls to clear the contents and start fresh
     Ctrl + C
         if there's a command running that you want to cancel (maybe it's taking too long), hit Ctrl + C to end it.
+    up arrow and downs arraw gives you command history
+    doskey/history          // list all the history
+    
 
 Help:
     command followed by /?. will give more help, plus additional options for modifying how it works.
@@ -35,3 +38,16 @@ Networking Commands and More
     ipconfig
         lets you see the network overview for your current connection.
         
+Files and Directories:
+    dir         // will list all the file and floders in a directory
+    dir path    // list files and directory without nevigating to the directory
+    dir/a       // include hidden files
+    dir *.png   // list all the png files
+
+    entering file name without any command will open it in default program.
+
+
+Creating and Removing Directories:
+    mkdir folder_name           // make new  directory
+    rmdir folder_name           // delete directory if its empty
+    rmdir /s folder_name        // delete directory even if its not empty 
