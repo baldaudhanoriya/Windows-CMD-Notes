@@ -43,7 +43,7 @@ Files and Directories:
     dir path    // list files and directory without nevigating to the directory
     dir/a       // include hidden files
     dir *.png   // list all the png files
-
+    dir "Windows de*"  // list all the files with starting with "Windows de"
     entering file name without any command will open it in default program.
 
 
@@ -51,3 +51,24 @@ Creating and Removing Directories:
     mkdir folder_name           // make new  directory
     rmdir folder_name           // delete directory if its empty
     rmdir /s folder_name        // delete directory even if its not empty 
+
+PATH Variable:
+    cd "C:\Program Files\app"           go to absolute and and use quotation to for dir with space  in its name
+    path                        // list all the directory in added in Variable
+
+Drives:
+    wmic logicaldisk get name   // prints Available  drives
+    tree                        // prints the hierarchy of dir and all the sub directory
+
+colors:
+    color 04                    // first charcter represents background color and second color represents foreground color
+
+File Attributes:
+    attrib /?                   // display all the Available attributes of file
+    attrib                      // show the file and its attributes
+    add attribute to a file:
+        attrib +"attribute charcter" file_name
+    remote attribute from a file
+        attrib -"attribute charcter" file_name
+    
+    eg. attrib -h +r file.txt   // remove hidden attribute andd add read only attrib to file.txt 
