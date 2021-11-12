@@ -24,6 +24,7 @@ CMD Management
         type cls to clear the contents and start fresh
     Ctrl + C
         if there's a command running that you want to cancel (maybe it's taking too long), hit Ctrl + C to end it.
+    
     up arrow and downs arraw gives you command history
     doskey/history          // list all the history
     
@@ -65,10 +66,22 @@ colors:
 
 File Attributes:
     attrib /?                   // display all the Available attributes of file
-    attrib                      // show the file and its attributes
+    attrib                      // show the all files in dir and its attributes
     add attribute to a file:
         attrib +"attribute charcter" file_name
     remote attribute from a file
         attrib -"attribute charcter" file_name
     
     eg. attrib -h +r file.txt   // remove hidden attribute andd add read only attrib to file.txt 
+
+create:
+    echo sometext > file_name.txt 
+
+    append:
+        echo sometext >> file_name.txt 
+
+delete:
+    del file_name
+
+Read:
+    type file_name
