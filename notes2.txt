@@ -66,7 +66,7 @@ colors:
 
 File Attributes:
     attrib /?                   // display all the Available attributes of file
-    attrib                      // show the all files in dir and its attributes
+    attrib                      // show all files in dir and its attributes (not folder)
     add attribute to a file:
         attrib +"attribute charcter" file_name
     remote attribute from a file
@@ -74,14 +74,25 @@ File Attributes:
     
     eg. attrib -h +r file.txt   // remove hidden attribute andd add read only attrib to file.txt 
 
-create:
-    echo sometext > file_name.txt 
+File Handling:
+    create:
+        echo sometext > file_name.txt 
 
-    append:
-        echo sometext >> file_name.txt 
+        append:
+            echo sometext >> file_name.txt 
 
-delete:
-    del file_name
+    delete:
+        del file_name
 
-Read:
-    type file_name
+    Read:
+        type file_name
+
+    copy:
+        copy source destination             copy only files not folder
+        xcopy source destination /s         copy folder as well
+    
+    cut:
+        move source destination
+
+    rename:
+        rename current new              rename  directory
