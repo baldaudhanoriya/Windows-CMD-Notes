@@ -14,10 +14,6 @@ The dir command, which is short for directory, will list the contents of the fol
     dir
 To change your current location, use cd (short for change directory) followed by the folder you want to visit. Available folders are marked with <DIR> when you run the dir command.
 
-Creating and Deleting Files and Folders:
-    mkdir [new folder name]         // make directory
-    rmdir [folder name]             // remove directory,     will delete a folder, but only if it's empty
-    del [file name]                 // To delete a file, use 
 
 CMD Management
     cls
@@ -41,20 +37,21 @@ Networking Commands and More
         
 Files and Directories:
     dir         // will list all the file and floders in a directory
+                // use "" if name of file or dir  has space in it.
     dir path    // list files and directory without nevigating to the directory
     dir/a       // include hidden files
     dir *.png   // list all the png files
     dir "Windows de*"  // list all the files with starting with "Windows de"
     entering file name without any command will open it in default program.
 
-
-Creating and Removing Directories:
-    mkdir folder_name           // make new  directory
-    rmdir folder_name           // delete directory if its empty
-    rmdir /s folder_name        // delete directory even if its not empty 
+Creating and Deleting Files and Folders:
+    mkdir [new folder name]         // make directory
+    rmdir [folder name]             // remove directory,     will delete a folder, but only if it's empty
+    rmdir /s folder_name            // delete directory even if its not empty 
+    del [file name]                 // To delete a file, use 
 
 PATH Variable:
-    cd "C:\Program Files\app"           go to absolute and and use quotation to for dir with space  in its name
+    cd "C:\Program Files\app"           go to absolute and and use quotation to for dir with space in its name
     path                        // list all the directory in added in Variable
 
 Drives:
@@ -68,9 +65,9 @@ File Attributes:
     attrib /?                   // display all the Available attributes of file
     attrib                      // show all files in dir and its attributes (not folder)
     add attribute to a file:
-        attrib +"attribute charcter" file_name
+        attrib +attribute_charcter file_name
     remote attribute from a file
-        attrib -"attribute charcter" file_name
+        attrib -attribute_charcter file_name
     
     eg. attrib -h +r file.txt   // remove hidden attribute andd add read only attrib to file.txt 
 
@@ -83,16 +80,20 @@ File Handling:
 
     delete:
         del file_name
-
+    
+    write:
+        output or any cmd to file:
+            command > file_name
     Read:
         type file_name
 
     copy:
-        copy source destination             copy only files not folder
-        xcopy source destination /s         copy folder as well
+        copy source destination             // copy only files not folder
+        copy a.txt cook
+        xcopy source destination /s         // copy folder as well
     
     cut:
-        move source destination
+        move source destination             // move a file one folder to another
 
     rename:
-        rename current new              rename  directory
+        rename current new              // rename  directory
